@@ -2,7 +2,7 @@
     margin: 0;
     display: grid;
     place-content: center;
-    gap: 60px
+    gap: 30px
 }
 .dispensar{
     place-content: center;

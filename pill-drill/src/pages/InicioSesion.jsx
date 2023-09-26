@@ -48,8 +48,6 @@ const InicioSesion = () => {
       <PhotoCarousel images={images} />
       <form ref={form}>
         <div className={style.flexbox}>
-          <h1 className={style.title}></h1>
-
           <div className={style.contenedorflotante}>
             <input
               type="email" // Cambiado de 'INPUT' a 'email'

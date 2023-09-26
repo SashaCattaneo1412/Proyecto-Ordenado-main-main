@@ -1,8 +1,8 @@
 .carousel {
     max-width: 100%; /* Ancho máximo del carrusel */
     margin: auto; /* Centrar el carrusel en la página */
-    max-height: 2%;
-    width: 2000px;
+    
+
   }
   
   .carousel .slide img {
