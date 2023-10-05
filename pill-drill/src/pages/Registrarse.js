@@ -7,8 +7,8 @@ const Registrarse = () => {
   const form = useRef();
   const [nombre, setNombre] = useState("");
   const [mail, setMail] = useState("");
-  // const [password, setPassword] = useState("");
-  const [Confirmpassword, setConfirmPassword] = useState("");
+  const [password, setPassword] = useState("");
+  //const [Confirmpassword, setConfirmPassword] = useState("");
   const registrarse = async (e) => {
     e.preventDefault();
 
@@ -17,7 +17,7 @@ const Registrarse = () => {
     console.log(form.current.querySelector("#nombre"));
     console.log(form.current.querySelector('#email'));
     console.log(form.current.querySelector('#contraseña'));
-    console.log(form.current.querySelector('#ConfirmContraseña'));
+ 
 
 
     const nombre = form.current.target.chlildren("#nombre");
@@ -26,11 +26,11 @@ const Registrarse = () => {
     const Confirmpassword = form.current.target.chlildren("#ConfirmContraseña");
     // const password = 
 
-    if (password == Confirmpassword) {
-      console.error('Las contraseñas no coinciden.');
-      return;
+    //if (password == Confirmpassword) {
+      //console.error('Las contraseñas no coinciden.');
+      //return;
 
-    }
+    //}
 
     try {
       const response = await fetch('http://localhost:5000/registrarse', {
@@ -38,7 +38,7 @@ const Registrarse = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ nombre, mail, password, Confirmpassword }),
+        body: JSON.stringify({ nombre, mail, password }),
       });
 
       if (response.ok) {
@@ -60,20 +60,18 @@ const Registrarse = () => {
         <h1 className={style.title}></h1>
 
         <div className={style.contenedorflotante}>
-          <input type="input" className="form-control" id="nombre" placeholder="Nombre Completo" />
+          <input type="input" className="form-control" id="nombre" placeholder="Nombre Completo"  onChange={(event) => setNombre(event.target.value)}/>
         </div>
 
         <div className={style.contenedorflotante}>
-          <input type="input" className="form-control" id="email" placeholder="nombre@ejemplo.com"  />
+          <input type="input" className="form-control" id="email" placeholder="nombre@ejemplo.com"   onChange={(event) => setMail(event.target.value)}/>
         </div>
 
         <div className={style.contenedorflotante}>
-          <input type="password" className="form-control" id="contraseña" placeholder="Contraseña" />
+          <input type="password" className="form-control" id="contraseña" placeholder="Contraseña"  onChange={(event) => setPassword(event.target.value)} />
         </div>
-
-        <div className={style.contenedorflotante}>
-          <input type="password" className="form-control" id="ConfirmContraseña" placeholder="Repita la Contraseña" />
-        </div>
+       
+        
 
       </div>
 

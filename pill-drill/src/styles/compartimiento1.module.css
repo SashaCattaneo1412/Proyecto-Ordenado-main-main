@@ -1,5 +1,6 @@
 
 .formcontainer {
+  
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas */
     justify-content: space-around;

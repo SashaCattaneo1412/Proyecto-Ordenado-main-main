@@ -10,7 +10,7 @@ function compartimiento() {
     <div className={style.container}>
     <div className={style.containerimg}>
         <div className={style.botonComp1}>
-        <Link href="/compartimiento1">
+        <Link href="/compartimento1">
        
           <img
             src='/Image/btn1.png' // Reemplaza con la ruta correcta de tu imagen
@@ -21,7 +21,7 @@ function compartimiento() {
       </Link>
         </div> <br />
         <div className={style.botonComp2}>
-        <Link href="/compartimiento2">
+        <Link href="/compartimento2">
         <img
             src='/Image/btn2.png' // Reemplaza con la ruta correcta de tu imagen
             alt="Botón"
@@ -33,7 +33,7 @@ function compartimiento() {
 
     <div className={style.containerimg}>
     <div className={style.botonComp3}>
-        <Link href="/compartimiento3">
+        <Link href="/compartimento3">
         <img
             src='/Image/btn3.png' // Reemplaza con la ruta correcta de tu imagen
             alt="Botón"
@@ -42,7 +42,7 @@ function compartimiento() {
        </Link> 
      </div> <br />
      <div className={style.botonComp4}>
-     <Link href="/compartimiento3">
+     <Link href="/compartimento4">
         <img
             src='/Image/btn4.png' // Reemplaza con la ruta correcta de tu imagen
             alt="Botón"

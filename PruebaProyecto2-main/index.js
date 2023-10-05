@@ -7,7 +7,7 @@ const cors = require('cors');
 const mysql = require('mysql2');
 require('dotenv').config();
 
-const connection = mysql.createConnection(process.env.DATABASE_URL='mysql://nwawnwimtebdb9khfwya:pscale_pw_jHunlpX2OH7QavYAgAI8rIzwxAywRo7jNrJxx0UToh7@aws.connect.psdb.cloud/proyecto?ssl={"rejectUnauthorized":true}');
+const connection = mysql.createConnection(process.env.DATABASE_URL='mysql://fo4typbzxyeqq9jqsfwt:pscale_pw_kbWBuOOyz0N2sL04HpRuAPbtpVpE4ORydz7ws65fdLc@aws.connect.psdb.cloud/proyecto?ssl={"rejectUnauthorized":true}');
 connection.connect((err) => {
   if (err) {
     console.error('Error al conectarse a la base de datos:', err);

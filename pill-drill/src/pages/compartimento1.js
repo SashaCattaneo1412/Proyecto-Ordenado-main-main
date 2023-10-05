@@ -39,7 +39,7 @@ const compartimiento1 = () => {
       </div>
       </div>
       <div className={style.guardar}>
-        <Link href="/compartimiento">
+        <Link href="/compartimento">
             <div className={style.labelguardar}>Guardar</div>
         </Link>
         </div>
