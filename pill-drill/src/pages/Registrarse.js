@@ -60,11 +60,11 @@ const Registrarse = () => {
         <h1 className={style.title}></h1>
 
         <div className={style.contenedorflotante}>
-          <input type="input" className="form-control" id="nombre" placeholder="Nombre Completo"  onChange={(event) => setNombre(event.target.value)}/>
+          <input type="email" className="form-control" id="nombre" placeholder="Nombre Completo"  onChange={(event) => setNombre(event.target.value)}/>
         </div>
 
         <div className={style.contenedorflotante}>
-          <input type="input" className="form-control" id="email" placeholder="nombre@ejemplo.com"   onChange={(event) => setMail(event.target.value)}/>
+          <input type="email" className="form-control" id="email" placeholder="nombre@ejemplo.com"   onChange={(event) => setMail(event.target.value)}/>
         </div>
 
         <div className={style.contenedorflotante}>
