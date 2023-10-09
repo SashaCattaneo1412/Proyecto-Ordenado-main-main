@@ -7,20 +7,21 @@ import HeaderB from './HeaderB';
 const Layout = ({ children, pagina }) => {
   let pageTitle = '';
 
-  // Establece el título según la página
+  // Set the title based on the page
   if (pagina === 'InicioSesion') {
     pageTitle = 'Bienvenido a Pilldrill';
   } else if (pagina === 'Registrarse') {
     pageTitle = 'Crea cuenta nueva';
+  } else {
+    pageTitle = pagina; // Use the page name for other pages
   }
 
   return (
     <div>
       <Head>
-        <title> PILL-DRILL - {pagina} </title>
+        <title>PILL-DRILL - {pageTitle}</title>
       </Head>
 
-      {/* Utiliza Headercomponent para todas las páginas excepto IniciarSesion y Registrarse */}
       {pagina !== 'InicioSesion' && pagina !== 'Registrarse' ? (
         <Headercomponent />
       ) : (
@@ -29,7 +30,7 @@ const Layout = ({ children, pagina }) => {
 
       {children}
 
-      
+      <Footer />
     </div>
   );
 };

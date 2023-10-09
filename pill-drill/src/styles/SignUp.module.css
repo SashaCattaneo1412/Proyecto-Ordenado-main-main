@@ -28,7 +28,7 @@
   margin: 0;
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
- 
+
   cursor: pointer; /* Cambiar cursor al pasar el ratón */
   border-radius: 20px;
   background: rgba(230, 221, 214, 1);

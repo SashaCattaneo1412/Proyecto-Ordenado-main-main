@@ -9,12 +9,22 @@ const Header = () => {
         <Link href="/">
           <Image width={180} height={150} src="/Image/LOGO1.png" alt="Imagen Logo" />
         </Link>
-         <nav className={style.navegacion}>
-            <Link href="/Registrarse"> Registrarse </Link>
-            <Link href="/InicioSesion"> Inicio de sesion </Link>
-            <Link href="/DispensarPasti"> Pastillas </Link>
-            <Link href="/compartimento"> compartimento</Link>
-         </nav>
+        <div className={style.usuario}>
+        
+        </div>
+        <div className={style.botones}>
+        <button className={style.calendario} onClick={() => dispensarP()}>
+        <div className={style.contenidoEncima}>CALENDARIO</div>
+      </button>
+
+      <button className={style.contactanos} onClick={() => dispensarP()}>
+        <div className={style.contenidoEncima}>CONTACTANOS</div>
+        </button>
+        </div>
+
+        <Link href="/">
+        <Image width={150} height={125} src="/Image/usuario.png" alt="Imagen Logo" />
+        </Link>
          </div>
        </div> 
     </header>

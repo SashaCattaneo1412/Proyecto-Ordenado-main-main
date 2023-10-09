@@ -53,3 +53,38 @@
     justify-content: space-between;
    }
 }
+
+.usuario
+{
+float: right;
+}
+.contactanos{
+  place-content: center;
+  border-radius: 40px;
+  background: #E6DDD6;
+  width: 391px;
+  height: 87px;
+  flex-shrink: 0;
+  border: none;
+
+}
+.calendario{
+  place-content: center;
+  border-radius: 40px;
+  background: #E6DDD6;
+  width: 391px;
+  height: 87px;
+  flex-shrink: 0;
+  border: none;
+
+}
+.contenidoEncima{
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Lexend, sans-serif;
+}
+.botones{
+  align-items: center;
+ 
+}
